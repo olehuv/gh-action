@@ -16,5 +16,7 @@ jobs:
           cache-dependency-path: 02StartingProject/package-lock.json
       - name: Install dependencies
         run: npm ci
+        working-directory: 02StartingProject
       - name: Run tests
         run: npm test
+        working-directory: 02StartingProject
